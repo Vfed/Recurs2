@@ -29,7 +29,6 @@ namespace Recurs2
                     {
                         case '{' when Code[1] != ']' && Code[1] != ')':
                             return RecursString(Code[0] + RecursString(Code.Substring(1)));
-                            break;
                         case '[' when Code[1] != '}' && Code[1] != ')':
                             return RecursString(Code[0] + RecursString(Code.Substring(1)));
                         case '(' when Code[1] != ']' && Code[1] != '}':
