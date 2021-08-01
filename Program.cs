@@ -53,14 +53,16 @@ namespace Recurs2
                 Console.Write("Enter String : ");
                 string SomeCode = Console.ReadLine();
                 SomeCode = RecursString(SomeCode);
+
                 if (SomeCode.Length == 0)
                 {
-                    Console.WriteLine("is ok " + SomeCode);
+                    Console.WriteLine("is ok ");
                 }
                 else
                 {
-                    Console.WriteLine("not ok " + SomeCode);
+                    Console.WriteLine("not ok ");
                 }
+
                 if (Console.ReadKey().Key == ConsoleKey.Escape) {
                     return;
                 };
